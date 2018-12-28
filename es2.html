@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+    <style>
+        article {
+            height: 200px;
+            width: 200px;
+            border-style: solid;
+            border-color: black;
+            position: relative;
+        }
+
+        #a1:hover {
+            -webkit-transform: scale(2, 2);
+            -webkit-animation-duration: 0.5s;
+        }
+
+
+        #a2:hover {
+            background-color: red;
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+        }
+
+
+        #a3:hover {
+            -moz-animation-timing-function: ease-in-out;
+            -moz-animation-name: example1;
+            -moz-animation-duration: 3s; 
+        }
+
+
+        @keyframes example1 {
+            from {
+                top: 0px;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+
+        #a4 {}
+
+        #a5 {}
+
+        #a6 {}
+    </style>
+
+</head>
+
+
+<body>
+    <article id="a1">BOX1</article>
+    <article id="a2">BOX2</article>
+    <article id="a3">BOX3</article>
+    <article id="a4">BOX4</article>
+    <article id="a5">BOX5</article>
+    <article id="a6">BOX6</article>
+</body>
+
+</html>
